@@ -8,7 +8,13 @@ import 'firebase/compat/firestore';
 import './index.css';
 
 const firebaseConfig = {
- 
+  apiKey: "AIzaSyBfbYvc2L5LI9Ofjoy_IDeoLKdoCKBl-BM",
+  authDomain: "dashboard-5bcc2.firebaseapp.com",
+  projectId: "dashboard-5bcc2",
+  storageBucket: "dashboard-5bcc2.appspot.com",
+  messagingSenderId: "703695339530",
+  appId: "1:703695339530:web:3c473129251fabcfcc1ff3",
+  measurementId: "G-LD8RXPKDXC"
 };
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
