@@ -3,9 +3,7 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 # Book Administration Dashboard
 
-![Dashboard Preview]
-(login_preview.png)
-(dashboard_preview.png)
+
 
 ## Description
 
