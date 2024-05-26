@@ -35,6 +35,11 @@ This application provides an admin dashboard for managing book records fetched f
 
 ## Screenshots
 [![Login Preview](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/login_preview.png.jpg?raw=true)](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/login_preview.png.jpg?raw=true)
+-admin:218w1a1285@vrsec.ac.in
+-pw:hellopranu
+[![Functions](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/functions.png.jpg?raw=true)](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/functions.png.jpg?raw=true)
+[![Login Preview](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/login_preview.png.jpg?raw=true)](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/login_preview.png.jpg?raw=true)
+
 
 
 ## Setup
