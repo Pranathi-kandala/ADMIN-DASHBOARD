@@ -22,11 +22,64 @@ code {
 table {
   background-color: rgba(255, 255, 255, 0.5); /* Set table background to transparent beige */
   border-collapse: collapse;
+  
+  width: 100%;
+ 
+}
+.table-container {
+  overflow-x: auto;
+  width: 100%;
 }
 
-tr:hover {
-  background-color: rgba(255, 255, 255, 0.7); /* Change background color on hover */
+/* Media query for smaller screens */
+@media (max-width: 400px) {
+  th, td {
+    padding: 12px 8px;
+    font-size: 14px;
+  }
+
+  /* Ensure all columns are visible */
+  th, td {
+    display: table-cell;
+    white-space: nowrap;
+  }
+
+  /* Stack the table headers vertically for very small screens */
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  /* Hide the table headers for small screens */
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #ddd;
+  }
+
+  td {
+    text-align: right;
+    padding-left: 50%;
+    position: relative;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
 }
-.bg-beige {
-  background-color: beige;
+
+/* Media query for very small screens */
+@media (max-width: 480px) {
+  th, td {
+    font-size: 12px;
+    padding: 10px 5px;
+  }
 }
