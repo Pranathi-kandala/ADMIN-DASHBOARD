@@ -106,15 +106,13 @@ const Main = () => {
 
   return (
     <div
-      className="px-4 sm:px-5 bg-gray-900 min-h-screen flex flex-col justify-center items-center"
+      className="px-4 sm:px-5 bg-gray-900 min-h-screen flex flex-col justify-center items-center bg-cover bg-no-repeat"
       style={{
         backgroundImage: 'url("https://i.pinimg.com/736x/f5/82/5e/f5825ee00a9b4bf01f7a1b2960718b07.jpg")',
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
       }}
     >
       <DashboardText />
-      <div className="py-10">
+      <div className="py-10 w-full flex flex-col items-center">
         {isLoading ? (
           <ReactLoading
             type="spin"
@@ -122,27 +120,24 @@ const Main = () => {
             className="mx-auto top-[30vh] relative"
           />
         ) : (
-          <div>
+          <div className="w-full">
             <form
               onSubmit={handleAuthorSearch}
-              className="mb-4 flex justify-center items-center"
-              style={{ marginTop: "-20px" }}
+              className="mb-4 flex justify-center items-center w-full"
             >
-              <div className="flex items-center">
+              <div className="flex items-center w-full justify-center">
                 <input
                   type="text"
                   id="authorName"
                   placeholder="Search by author name"
-                  className="px-2 py-1 rounded-md ml-3 mr-2 mb-3 bg-transparent border border-gray-500 text-white text-lg" // Adjusted class
-                  style={{ textAlign: "center" }} // Center the text
-                  onKeyPress={(e) => e.key === "Enter" && handleAuthorSearch(e)}
+                  className="px-2 py-1 rounded-md bg-transparent border border-gray-500 text-white text-lg w-full max-w-xs text-center"
                 />
                 <button type="submit" className="bg-transparent border-none">
-                  <FiSearch className="text-white" size={24} style={{ marginBottom: '10px' }} /> {/* Adjusted size */}
+                  <FiSearch className="text-white ml-2" size={24} />
                 </button>
               </div>
             </form>
-            <div style={{ marginTop: "-20px" }}>
+            <div className="w-full overflow-x-auto">
               <BooksTable
                 handleAuthorSearch={handleAuthorSearch}
                 handleYearSort={handleYearSort}
@@ -152,7 +147,7 @@ const Main = () => {
                 postsPerPage={postsPerPage}
               />
             </div>
-            <div className="flex items-center justify-around flex-col md:flex-row gap-5 pt-10">
+            <div className="flex flex-col md:flex-row items-center justify-around gap-5 pt-10 w-full">
               <PaginationComponent
                 prevPage={handlePrevPage}
                 nextPage={handleNextPage}
@@ -171,4 +166,4 @@ const Main = () => {
     </div>
   );
 };
-export default Main;  
+export default Main;
