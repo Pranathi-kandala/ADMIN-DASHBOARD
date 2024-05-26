@@ -32,17 +32,21 @@ This application provides an admin dashboard for managing book records fetched f
 - Firebase authentication for logging into the dashboard.
 - Link to next and previous pages.
 - Option to enter page number directly.
+## To Login
+admin:218w1a1285@vrsec.ac.in
+pw:hellopranu
 
-## Screenshots
+
+## Login and preview
 [![Login Preview](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/login_preview.png.jpg?raw=true)](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/login_preview.png.jpg?raw=true)
--admin:218w1a1285@vrsec.ac.in
--pw:hellopranu
+[![Dashboard Preview](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/dashboard_preview.png.jpg?raw=true)](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/dashboard_preview.png.jpg?raw=true
+## Functions
 [![Functions](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/functions.png.jpg?raw=true)](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/functions.png.jpg?raw=true)
-[![Login Preview](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/login_preview.png.jpg?raw=true)](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/login_preview.png.jpg?raw=true)
 
 
 
-## Setup
+
+
 
 
 ## Technologies Used
