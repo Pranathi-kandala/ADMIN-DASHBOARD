@@ -5,9 +5,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+table {
+  background-color: rgba(255, 255, 255, 0.5); /* Set table background to transparent beige */
+  border-collapse: collapse;
+}
+
+tr:hover {
+  background-color: rgba(255, 255, 255, 0.7); /* Change background color on hover */
+}
+.bg-beige {
+  background-color: beige;
 }
