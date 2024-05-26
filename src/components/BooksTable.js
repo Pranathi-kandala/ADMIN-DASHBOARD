@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import { FiArrowUp, FiArrowDown } from "react-icons/fi"; // Importing the icons
-import { FaStar, FaStarHalfAlt } from "react-icons/fa"; // Importing star icons
+import { FiArrowUp, FiArrowDown } from "react-icons/fi";
+import { FaStar, FaStarHalfAlt } from "react-icons/fa";
+
 
 const BooksTable = ({ data }) => {
   const [sortConfig, setSortConfig] = useState({ key: null, direction: null });
@@ -51,26 +52,26 @@ const BooksTable = ({ data }) => {
   };
 
   const cellStyle = {
-    color: "#1a1a1a", // Darker text color
-    fontWeight: "600" // Thicker text
+    color: "#1a1a1a",
+    fontWeight: "600",
+    padding: "0.5rem",
   };
 
   return (
-    <div className="flex justify-center mt-12">
-      <table className="min-w-[50%] text-black-1200">
-        {/* Table Headers */}
+    <div className="table-container">
+      <table className="min-w-full text-black-1200">
         <thead>
           <tr>
             <th
-              className="py-2 px-4 border-b"
-              style={{ ...cellStyle, fontWeight: "700", fontSize: "1.1rem" }} // Thicker for the first column
+              className="py-2 px-4 border-b cursor-pointer"
+              style={{ ...cellStyle, fontWeight: "700", fontSize: "1.1rem" }}
               onClick={() => requestSort("title")}
             >
               Title
               {renderSortIcon("title")}
             </th>
             <th
-              className="py-2 px-4 border-b"
+              className="py-2 px-4 border-b cursor-pointer"
               style={{ ...cellStyle, fontSize: "1rem" }}
               onClick={() => requestSort("author_name")}
             >
@@ -78,7 +79,7 @@ const BooksTable = ({ data }) => {
               {renderSortIcon("author_name")}
             </th>
             <th
-              className="py-2 px-4 border-b"
+              className="py-2 px-4 border-b cursor-pointer"
               style={{ ...cellStyle, fontSize: "1rem" }}
               onClick={() => requestSort("first_publish_year")}
             >
@@ -86,7 +87,7 @@ const BooksTable = ({ data }) => {
               {renderSortIcon("first_publish_year")}
             </th>
             <th
-              className="py-2 px-4 border-b"
+              className="py-2 px-4 border-b cursor-pointer"
               style={{ ...cellStyle, fontSize: "1rem" }}
               onClick={() => requestSort("ratings_average")}
             >
@@ -104,33 +105,36 @@ const BooksTable = ({ data }) => {
             </th>
           </tr>
         </thead>
-        {/* Table Body */}
         <tbody>
           {sortedData().map((book, index) => (
             <tr key={index} className="text-center">
-              <td className="py-2 px-4 border-b" style={{ ...cellStyle, fontWeight: "700" }}>
+              <td
+                className="py-2 px-4 border-b"
+                style={{ ...cellStyle, fontWeight: "700" }}
+                data-label="Title"
+              >
                 {book.title}
               </td>
-              <td className="py-2 px-4 border-b" style={cellStyle}>
+              <td className="py-2 px-4 border-b" style={cellStyle} data-label="Author">
                 {book.author_name?.[0]}
               </td>
-              <td className="py-2 px-4 border-b" style={cellStyle}>
+              <td className="py-2 px-4 border-b" style={cellStyle} data-label="First Publish Year">
                 {book.first_publish_year}
               </td>
-              <td className="py-2 px-4 border-b" style={cellStyle}>
+              <td className="py-2 px-4 border-b" style={cellStyle} data-label="Ratings Average">
                 <div className="flex justify-center items-center">
                   {book.ratings_average
                     ? renderRatingStars(parseFloat(book.ratings_average))
                     : "N/A"}
                 </div>
               </td>
-              <td className="py-2 px-4 border-b" style={cellStyle}>
+              <td className="py-2 px-4 border-b" style={cellStyle} data-label="Subject">
                 {book.subject?.join(", ").slice(0, 50)}
               </td>
-              <td className="py-2 px-4 border-b" style={cellStyle}>
+              <td className="py-2 px-4 border-b" style={cellStyle} data-label="Author Birth Date">
                 {book.birth_date}
               </td>
-              <td className="py-2 px-4 border-b" style={cellStyle}>
+              <td className="py-2 px-4 border-b" style={cellStyle} data-label="Author Top Work">
                 {book.top_work}
               </td>
             </tr>
