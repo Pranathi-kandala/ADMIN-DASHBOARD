@@ -24,7 +24,7 @@ This application provides an admin dashboard for managing book records fetched f
   - Author Top Work
 - Pagination support with default showing 10 books per page.
 - Option to change the number of records per page up to 50 or 100.
-- Ability to apply ascending/descending sort on all columns.
+- Ability to apply ascending/descending sort on all columns by clicking arrow
 - Search books feature by author.
 - Download current results in CSV format.
 - Firebase authentication for logging into the dashboard.
@@ -36,16 +36,16 @@ pw:hellopranu
 
 
 ## Login and preview
-[![Login Preview](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/login_preview.png.jpg?raw=true)](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/login_preview.png.jpg?raw=true)
-[![Dashboard Preview](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/dashboard_preview.png.jpg?raw=true)](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/dashboard_preview.png.jpg?raw=true
-## Functions
-[![Functions](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/functions.png.jpg?raw=true)](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/functions.png.jpg?raw=true)
 
 
 
+![login_preview png](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/assets/113846273/b88aa374-292f-4bf3-8b1e-89b8cb1896b6)
+
+![dashboard_preview png](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/assets/113846273/e8930a3c-893c-4984-88c3-361d76e471da)
 
 
-
+![functions png](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/assets/113846273/013ae5ff-5390-4ead-9566-a6912944c7d0)
+![sort](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/assets/113846273/8934c957-ac80-478b-a8fe-fb912bd9d843)
 
 ## Technologies Used
 
