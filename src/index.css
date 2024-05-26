@@ -32,7 +32,7 @@ table {
 }
 
 /* Media query for smaller screens */
-@media (max-width: 400px) {
+@media (max-width: 300px) {
   th, td {
     padding: 12px 8px;
     font-size: 14px;
