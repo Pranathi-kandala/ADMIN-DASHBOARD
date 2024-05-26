@@ -34,12 +34,8 @@ This application provides an admin dashboard for managing book records fetched f
 - Option to enter page number directly.
 
 ## Screenshots
+[![Login Preview](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/login_preview.png.jpg?raw=true)](https://github.com/Pranathi-kandala/ADMIN-DASHBOARD/blob/main/images/login_preview.png.jpg?raw=true)
 
-![Login Page]
-![Dashboard with Pagination]
-![Sorting Books]
-![Search by Author]
-![CSV Download](functions.png)
 
 ## Setup
 
